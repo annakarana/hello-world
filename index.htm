@@ -1,0 +1,944 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="">
+<meta name="author" content="">
+
+<title>Documentation · The REX WordPress Theme</title>
+
+<link href="assets/bootstrap.css" rel="stylesheet">
+
+</head>
+<style>
+    html, body, .bs-docs-container, .bs-sidebar, .bs-sidebar > .bs-sidenav {
+        height:100%;
+    }
+    .bs-sidebar > .bs-sidenav{
+        padding-bottom: 80px;
+        overflow-y: auto;   
+    }
+
+</style>
+  <body>
+    <a class="sr-only" href="#content">Skip navigation</a>
+
+    <header class="navbar navbar-inverse navbar-fixed-top bs-docs-nav" role="banner">
+  <div class="container">
+    <div class="navbar-header">
+      <button class="navbar-toggle" type="button" data-toggle="collapse" data-target=".bs-navbar-collapse">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a target="_blank" href="http://bk-ninja.com" class="navbar-brand">BK Ninja</a>
+    </div>
+    <nav class="collapse navbar-collapse bs-navbar-collapse" role="navigation">
+      <ul class="nav navbar-nav">
+        <li class="active">
+          <a href="#">Documentation</a>
+        </li>
+        <li>
+          <a target="_blank" href="http://therex.bk-ninja.com/">Demo</a>
+        </li>
+        <li>
+          <a target="_blank" href="http://themeforest.net/user/bkninja/portfolio">More Themes</a>
+        </li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+    <div class="bs-header" id="content">
+      <div class="container">
+        <h1>The REX - Wordpress Theme</h1>
+        <p>Wordpress News &amp; Magazine Theme . </p>
+      </div>
+    </div>
+
+    <div class="container bs-docs-container">
+      <div class="row">
+        <div class="col-md-3">
+          <div class="bs-sidebar hidden-print affix" role="complementary">
+            <ul class="nav bs-sidenav">
+                <li class=""><a href="#rate-for-us"><strong>Help us by rating this theme!</strong></a></li>
+				<li class="">
+					<a href="#installation">Installation</a>
+					<ul class="nav">
+						<li class=""><a href="#via-ftp">Uploading Via FTP</a></li>
+						<li class=""><a href="#via-wp">From The WordPress Dashboard</a></li>
+					</ul>
+				</li>
+				<li class=""><a href="#sample-data">Installing Demo Content</a></li>
+				<li class=""><a href="#migrating">Migrating From Another Theme</a></li>
+				<li class=""><a href="#menus">Theme Navigations</a>
+					<ul class="nav">
+						<li class=""><a href="#create-menu">Setup A New Menu</a></li>
+                        <li class=""><a href="#megamenu">Categories Mega Menus</a></li>
+                        <li class=""><a href="#columnmenu">Column Menu Setting</a></li>                        
+					</ul>
+				</li>
+                <li class=""><a href="#ajax-login">Ajax Login</a></li>
+				<li class=""><a href="#homepage">Create Homepage</a></li>
+                    <ul class="nav">
+						<li class=""><a href="#create-menu">Drag And Drop Homepage Builder</a></li>
+					</ul>
+				<li class=""><a href="#module">Homepage Modules</a>
+					<ul class="nav">
+                		<li class=""><a href="#feature-1">Fullwidth Section - BK Feature 1 (Grid)</a></li>
+                        <li class=""><a href="#feature-2">Fullwidth Section - BK Feature 2</a></li>
+                		<li class=""><a href="#carousel">Fullwidth Section - BK Carousel</a></li>
+                		<li class=""><a href="#row">Fullwidth Section - BK Row</a></li>
+                        <li class=""><a href="#hero">Fullwidth Section - BK Hero</a></li>
+                		<li class=""><a href="#fw-slider">Fullwidth Section - BK Fullwidth Slider</a></li>
+                        <li class=""><a href="#boxed-slider">Boxed Section - BK Boxed Slider</a></li>
+                		<li class=""><a href="#masonry">Fullwidth Section - BK Full Width Masonry</a></li>
+                        <li class=""><a href="#square-grid">Fullwidth Section - BK Square Grid</a></li>
+                		
+  		              
+                		<li class=""><a href="#feature-slider-sb">Content Section - BK Feature Slider</a></li>
+                		<li class=""><a href="#square-grid-sb">Content Section - BK Square Grid</a></li>
+                        <li class=""><a href="#post-block-1-sb">Content Section - BK Post Block 1</a></li>
+                		<li class=""><a href="#post-block-2-sb">Content Section - BK Post Block 2</a></li>
+                		<li class=""><a href="#masonry-sb">Content Section - BK Masonry</a></li>
+                        <li class=""><a href="#classic-blog-sb">Content Section - BK Classic Blog</a></li>
+                		<li class=""><a href="#large-blog-sb">Content Section - BK Large Blog</a></li>
+                        
+                	</ul>
+				</li>
+				<li class=""><a href="#logo">Uploading Your Logo</a></li>
+				<li class=""><a href="#favicon">Uploading Site Favicon</a></li>
+				<li class=""><a href="#styling">Styling</a>
+                    <ul class="nav">
+						<li class=""><a href="#color">Choose Site Color Scheme</a></li>
+                        <li class=""><a href="#typography">Site Typography</a></li>
+					</ul>
+                </li>
+                <li class=""><a href="#post">Post</a>
+                    <ul class="nav">
+						<li class=""><a href="#featured-images">Featured Images For The Posts</a></li>
+                        <li class=""><a href="#post-format">Post Format</a></li>
+                        <li class=""><a href="#review">Adding A Review Post</a></li>
+                        <li class=""><a href="#custom-post-setting">Custom Post Setting</a></li>
+					</ul>
+                </li>
+                <li class=""><a href="#category">Category</a>
+                    <ul class="nav">
+						<li class=""><a href="#cat-layout">Category layout</a></li>
+					</ul>
+                </li>
+                <li class=""><a href="#blog-layout">Blog And Archive Layout</a>
+                    <ul class="nav">
+						<li class=""><a href="#page-layout">Setting Page Layout</a></li>
+					</ul>
+                </li>
+                <li class=""><a href="#sticky_sidebar">Sticky Sidebar</a></li>
+
+                <li class=""><a href="#footer">Site Footer</a>
+                </li>
+                <li class=""><a href="#site-layout">Site Layout</a>
+                    <ul class="nav">
+                		<li class=""><a href="#layout-sw">Boxed And Wide</a></li>
+                		<li class=""><a href="#site-background">Site Background</a></li>
+                		<li class=""><a href="#sb-location">Sidebar Location</a></li>
+                		<li class=""><a href="#sb-responsive">Sidebar Responsive</a></li>
+                		<li class=""><a href="#main-nav-align">Main Nav Alignment</a></li>
+                	</ul>
+                </li>
+                <li class=""><a href="#sidebar">Custom sidebar generator</a></li>
+                <li class=""><a href="#shortcode">Shortcode</a>
+                    <ul class="nav">
+                		<li class=""><a href="#youtubesc">Youtube</a></li>
+                        <li class=""><a href="#vimeosc">Vimeo</a></li>
+                        <li class=""><a href="#half-col-sc">Half Column</a></li>
+                        <li class=""><a href="#one-third">1/3 1/3 1/3</a></li>
+                        <li class=""><a href="#two-third-one-third">2/3 1/3</a></li>
+                        <li class=""><a href="#info-box">Info Box</a></li>
+                        <li class=""><a href="#accordion">Accordion</a></li>
+                        <li class=""><a href="#tabs">Tabs</a></li>
+                        <li class=""><a href="#parallax-image">Parallax Image</a></li>
+                        <li class=""><a href="#team">Team</a></li>
+                        <li class=""><a href="#author-box">Author Box</a></li>
+                        <li class=""><a href="#buttons">Buttons</a></li>
+                        <li class=""><a href="#bkga">Google Adsense</a></li>
+                    </ul>
+                </li>
+                <li class=""><a href="#translations">Language Translations</a></li>
+                <li class=""><a href="#contact">Contact</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="col-md-9" role="main">
+
+		
+		
+<div class="bs-docs-section">
+	<div class="page-header">
+		<h1 id="installation">Installation</h1>
+	</div>
+	<h3 id="via-ftp">Uploading via FTP</h3>
+	<ul>
+		<li>
+			Download the zipped theme pack to your computer from themeforest and extract the ZIP file to a folder on your computer.</li>
+		<li>In the extracted folder you will find 'the-rex.zip'. Extract this file .</li>
+		<li>
+			Using an FTP client to access your host web server</li>
+		<li>
+			Upload the Theme files in the extracted folder called 'the-rex' to wp-content/themes directory provided by WordPress.</li>
+		<li>
+			Visit Admin panel -&gt; Appearance -&gt; Themes, look for the REX theme thumbnail, then click the Activate button to activate the theme.</li>
+	</ul>
+	
+	<h3 id="via-wp">Installing From the WordPress Dashboard</h3>
+	<ul>
+		<li>Download the zipped theme pack to your local computer from themeforest and extract the ZIP file contents to a folder on your local computer.</li>
+		<li>Log into your WordPress admin panel and click on the “Appearance” tab.</li>
+		<li>Now click on the "Add New" button.</li>
+		<li>Click on the "Upload" tab, click "Choose File" and select the-rex.zip in the extracted folder then click "Open".</li>
+		<li>Click the "Install Now" button.</li>
+		<li>Activate the theme from this page by clicking "Activate", or "Return to Themes Page" and activate from there</li>
+	</ul>
+</div> <!-- Section -->				
+		
+<div class="bs-docs-section">
+	<div class="page-header">
+		<h1 id="sample-data">Installing Demo Content</h1>
+	</div>
+	<h3>Manually Upload XML File</h3>
+	<div class="bs-callout bs-callout-danger">
+      <p>This Method will import posts, pages, menus only not the demo site theme settings. </p>
+    </div>
+	<ul>
+		<li>Go to Admin panel -&gt; Tools  -&gt; Import  -&gt; WordPress </li>
+		<li>Install the plugin.</li>
+		<li>Use it to upload the demo content XML file in the theme package.</li>
+	</ul>
+    <p>1. Go to Dashboard &gt; Tools &gt; Import and Click on <strong> Wordpress </strong> and Install it. </p>
+    <p><img src="assets/images/ImportProcess1.png" alt="" class="img-thumbnail"></p>
+    <p>2. Choose a content_data.xml file from your download package and then click on <strong> Upload file and Import </strong> </p>
+    <p><img src="assets/images/ImportProcess2.png" alt="" class="img-thumbnail"></p>
+    <p>3. Assign Authors and start import, click on <strong> Submit </strong> </p>
+    <p><img src="assets/images/ImportProcess3.png" alt="" class="img-thumbnail"></p>
+    <p>4. This process may take a while on some hosts, so please be patient. (some hosts between 5-6 minutes) </p>
+    <p><img src="assets/images/ImportProcess4.png" alt="" class="img-thumbnail"></p>
+</div> <!-- Section -->	
+	
+<div class="bs-docs-section">
+	<div class="page-header">
+		<h1 id="migrating">Migrating From Another Theme</h1>
+	</div>
+<p>If you are migration from a theme which used the native featured images functionality of WordPress, please use the <a href="http://wordpress.org/extend/plugins/regenerate-thumbnails/">Regenerate Thumbnails</a> plugin to resize all the thumbnails. Click the link above and download the free plugin, and read through the steps it contains, it has all the information you need.</p>
+</div> <!-- Section -->
+		
+<div class="bs-docs-section">
+	<div class="page-header">
+		<h1 id="menus">Theme Navigations</h1>
+	</div>
+	<h3 id="create-menu">Setup A New Menu</h3>
+	<p><img src="assets/images/createmenu.png" alt="" class="img-thumbnail"></p>
+    <p><img src="assets/images/createmenu1.png" alt="" class="img-thumbnail"></p>
+	<ol>
+   		<li>Navigate to Apperance -&gt; Menus page</li>
+        <li>Click the "create a new menu" link to make a new menu. Enter the name then hit Create Menu</li>
+        <li>To add a menu item, you can easily select one of your already made pages on the left hand side and click Add to Menu. You can also add menu items by entering a custom name and custom link into the Links box. To create a megamenu, see <a href="#megamenu">Categories Mega Menus</a>.</li>
+        <li>You can manage your menus using the drag and drop functionality. To create a dropdown menu, simply drag a menu item below and slightly to the right of another menu item and it will lock into place and create a dropdown section.</li>
+        <li>After setting up your menu, select menu location in the Menu Settings (Top Menu for navigation in top bar and Main Menu for main navigation below header)</li>
+        <li>Once its all done, make sure you click the Save button.</li>
+        <li>You can change menus locations at any time from Manage Locations tab .</li>
+  	 </ol>
+	 
+	<br />
+
+	<h3 id="megamenu">Categories Mega Menus</h3>
+    <p>The theme features a mega menu for category menu items to display latest posts in the corresponding category</p>
+    <p><img src="assets/images/megamenu.png" alt="" class="img-thumbnail"></p>
+	<ul>
+		<li>Add the Category you want to the menu.</li>
+		<li>In the setting panel of category menu item there will be a checkbox called BK Megamenu.</li>
+		<li>Check it if you want to make that category menu item a megamenu or uncheck to make it a normal menu item.</li>
+        <li>Don't forget to set the menu location to Main Menu by clicking checkbox Main Menu in Theme locations section of Menu Settings.</li>
+        <li>Click Save Menu to finish.</li>
+	</ul>
+    <div class="bs-callout bs-callout-info">Both megamenu and normal menu items can have child menu.The maximum level of child menu to display in Main Menu is 2 level down, and 1 level for Top Menu.</div>
+
+    <h3 id="columnmenu">Column Menu Settings</h3>
+    <p>The theme features a mega menu for column menu items to display your features in the columns</p>
+    <p>Watch this video setup tutorial for your reference (We do this example on another theme (Sense Theme) but the setting flow is the same with the-rex Theme)</p>
+    <iframe width="808" height="454" src="http://www.youtube.com/embed/2cWe-sMw1F8" frameborder="0" allowfullscreen></iframe>
+</div> <!-- Section -->		
+<div class="bs-docs-section">
+    <div class="page-header">
+		<h1 id="ajax-login">Ajax Login Setup</h1>
+	</div>
+    <p class="lead">The theme is fully compatible with <a href="https://wordpress.org/plugins/login-with-ajax/">Login with ajax plugin</a> All you need to do is install <a href="https://wordpress.org/plugins/login-with-ajax/">the plugin</a> to have this beautiful feature.</p>
+    <p class="lead">Then, you need to access theme options to enable the login function in header (Theme Options -&gt Header Settings -&gt <strong>Enable header Ajax login</strong>)</p>
+    <p><img src="assets/images/ajax-login.png" alt="" class="img-thumbnail"/></p>
+</div>
+<div class="bs-docs-section">
+	<div class="page-header">
+		<h1 id="homepage">Create Homepage</h1>
+	</div>
+    <p class="lead">The theme supports a pagebuilder that you can easy build your content by drag and drop modules into the homepage sections .</p>
+    
+    <h3 id="homepage">Drag and Drop Homepage Builder</h3>
+    
+    <!-- Create HomePage -->
+    <p><img src="assets/images/createhome.png" alt="" class="img-thumbnail"/></p>
+	<ol>
+        <li>Go to Admin panel -&gt Pages -&gt Add new to create a new page.</li>
+        <li>Enter title for your homepage, example: Home Page. In the Page Attributes box, select Page Builder in Template option.</li>
+        <li>Click Update</li>
+    </ol>
+    
+    <!-- Pagebuilder Interface -->
+    <p>You will see the Pagebuilder interface like this.</p>
+    <p><img src="assets/images/buildhome.png" alt="" class="img-thumbnail"/></p>
+    <p>There are three sections: </p>
+    <ol>
+		<li>Fullwidth Section</li>
+        <li>Content Section</li>
+    </ol>
+    <br />
+    <p><b>Full Width Section:</b></p>
+    <p><img src="assets/images/Fullwidth-Section.png" alt="" class="img-thumbnail"/></p>
+    <ol>
+		<li>Click Fullwidth Section Thumbnail, then the Fullwidth section will be appeared.</li>
+        <li>There are 13 modules that can be used in this section
+            <ul>
+                <li>BK Feature 1 (Grid)</li>
+                <li>BK Feature 2</li>
+                <li>BK Boxed Slider</li>  
+                <li>BK Carousel</li>
+                <li>BK Row</li>
+                <li>BK Hero</li>
+                <li>BK FullWidth Slider</li>
+                <li>BK Masonry</li>
+                <li>BK Square Grid</li>
+                <li>BK Single Ads</li>
+                <li>BK Two Cols Ads</li>
+                <li>BK Three Cols Ads</li>
+                <li>BK Adsense</li>
+            </ul>
+        </li>
+    </ol>
+    
+    <p><b>Content Section:</b></p>
+    <p><img src="assets/images/Content-Section.png" alt="" class="img-thumbnail"/></p>
+    <ol>
+		<li>Click Content Section Thumbnail, then the Content section will be appeared. </li>
+        <li>There are 10 modules that you can use in this section
+            <ul>
+                <li>BK Feature Slider</li>
+                <li>BK Square Grid</li>
+                <li>BK Post Block 1</li>
+                <li>BK Post Block 2</li>
+                <li>BK Masonry</li>
+                <li>BK Classic Blog</li>
+                <li>BK Large Blog</li>
+                <li>BK Single Ads</li>
+                <li>BK Two Cols Ads</li>
+                <li>BK Adsense</li>
+            </ul>
+        </li>
+        <li>Sidebar Select</li>
+    </ol>    
+    
+    <h3>Setup front page</h3>
+    <p><img src="assets/images/buildhome2.png" alt="" class="img-thumbnail"/></p>
+    <ol>
+		<li>Once you finish building the homepage content, go to Settings -&gt Reading to set up your homepage.</li>
+		<li>In Front page displays option, choose A static page. In Frontpage option below, choose the page that you have just created in the steps above, example: Home Page. Click Save changes.</li>
+        <li>Go to your site home url to check if your homepage has been set.</li>
+	</ol>
+</div> <!-- Section -->
+
+<div class="bs-docs-section">
+	<div class="page-header">
+		<h1 id="module">Homepage Modules</h1>
+	</div>
+    <p class="lead">The REX supports 2 section types with many modules come with it. The layouts you can create is unlimited. Below are videos guide of each module.</p>
+    <h3 id="fw-sec">Fullwidth Section</h3>
+    <ol>
+        
+        <!-- BK Feature 1 -->
+        <li id="feature-1">
+            <h4>BK Feature 1</h4>
+            <h4>Tutorial Video</h4>
+        	<iframe width="808" height="454" src="http://www.youtube.com/embed/FSmOhfQyQBI" frameborder="0" allowfullscreen></iframe>
+        </li>
+        
+        <!-- BK Feature 2 (Slick Slider) -->
+        <li id="feature-2">
+            <h4>BK Feature 2 (Slick Slider)</h4>
+            <h4>Tutorial Video</h4>
+        	<iframe width="808" height="454" src="http://www.youtube.com/embed/z9Qgzu70dPo" frameborder="0" allowfullscreen></iframe>
+        </li>
+        
+        <!-- BK Carousel -->
+        <li id="carousel">
+            <h4>BK Carousel</h4>
+            <h4>Tutorial Video</h4>
+        	<iframe width="808" height="454" src="http://www.youtube.com/embed/_-KsUSK4XZA" frameborder="0" allowfullscreen></iframe>
+        </li> 
+        
+        <!-- BK Row -->
+        <li id="row">
+            <h4>BK Row</h4>
+            <h4>Tutorial Video</h4>
+        	<iframe width="808" height="454" src="http://www.youtube.com/embed/_1ogsjn6A1I" frameborder="0" allowfullscreen></iframe>
+        </li> 
+
+        <!-- BK Hero -->
+        <li id="hero">
+            <h4>BK Hero</h4>
+            <h4>Tutorial Video</h4>
+        	<iframe width="808" height="454" src="http://www.youtube.com/embed/XSZKBYL7URc" frameborder="0" allowfullscreen></iframe>
+        </li> 
+        
+        <!-- BK FullWidth Slider -->
+        <li id="fw-slider">
+            <h4>BK FullWidth Slider</h4>
+            <h4>Tutorial Video</h4>
+        	<iframe width="808" height="454" src="http://www.youtube.com/embed/-o9kWfZVbaE" frameborder="0" allowfullscreen></iframe>
+        </li> 
+        
+        <!-- BK Boxed Slider -->
+        <li id="boxed-slider">
+            <h4>BK Boxed Slider</h4>
+            <h4>Tutorial Video</h4>
+        	<iframe width="808" height="454" src="http://www.youtube.com/embed/2BgM4TaKjXI" frameborder="0" allowfullscreen></iframe>
+        </li>
+         
+        <!-- BK Masonry -->
+        <li id="masonry">
+            <h4>BK Masonry</h4>
+            <h4>Tutorial Video</h4>
+        	<iframe width="808" height="454" src="http://www.youtube.com/embed/woOAyzJmKWg" frameborder="0" allowfullscreen></iframe>
+        </li> 
+        
+        <!-- BK Square Grid -->
+        <li id="square-grid">
+            <h4>BK Square Grid</h4>
+            <h4>Tutorial Video</h4>
+        	<iframe width="808" height="454" src="http://www.youtube.com/embed/dhhjY5Y14O4" frameborder="0" allowfullscreen></iframe>
+        </li>
+        
+    </ol>
+    <!-- Content Section -->
+    <h3 id="content-sec">Content Section</h3>
+    <ol>
+        <li id="feature-slider-sb">
+            <h4>BK Feature Slider</h4>
+            <h4>Tutorial Video</h4>
+        	<iframe width="808" height="454" src="http://www.youtube.com/embed/hVzgYtbyDJ4" frameborder="0" allowfullscreen></iframe>
+        </li>
+        
+        <li id="square-grid-sb">
+            <h4>BK Square Grid</h4>
+            <h4>Tutorial Video</h4>
+        	<iframe width="808" height="454" src="http://www.youtube.com/embed/QS8T_6W0Faw" frameborder="0" allowfullscreen></iframe>
+        </li>
+
+        <li id="post-block-1">
+            <h4>BK Post Block 1</h4>
+            <h4>Tutorial Video</h4>
+        	<iframe width="808" height="454" src="http://www.youtube.com/embed/RIcnCCDY80I" frameborder="0" allowfullscreen></iframe>
+        </li>
+        
+        <li id="post-block-2">
+            <h4>BK Post Block 2</h4>
+            <h4>Tutorial Video</h4>
+        	<iframe width="808" height="454" src="http://www.youtube.com/embed/Y5yOOo6tkcQ" frameborder="0" allowfullscreen></iframe>
+        </li>
+        
+        <li id="masonry-sb">
+            <h4>BK Masonry</h4>
+            <h4>Tutorial Video</h4>
+        	<iframe width="808" height="454" src="http://www.youtube.com/embed/1sKMyZ-P7qM" frameborder="0" allowfullscreen></iframe>
+        </li> 
+
+        <li id="classic-blog-sb">
+            <h4>BK Classic Blog</h4>
+            <h4>Tutorial Video</h4>
+        	<iframe width="808" height="454" src="http://www.youtube.com/embed/rEsd_wEPyMc" frameborder="0" allowfullscreen></iframe>
+        </li>
+        
+        <li id="large-blog-sb">
+            <h4>BK Large Blog</h4>
+            <h4>Tutorial Video</h4>
+        	<iframe width="808" height="454" src="http://www.youtube.com/embed/NU47zqTtvf8" frameborder="0" allowfullscreen></iframe>
+        </li>
+        
+    </ol>    
+</div> <!-- Section -->
+
+<div class="bs-docs-section">
+	<div class="page-header">
+		<h1 id="logo">Uploading Your Logo</h1>
+	</div>
+    <p class="lead">The theme will auto generate a logo for your site base on the site title, but it's recommended that you upload your own logo.</p>
+	<p><img src="assets/images/logo.png" alt="" class="img-thumbnail"></p>
+	<ol>
+		<li>Navigate to Theme Options -&gt; Header Settings tab .</li>
+		<li>In the Site logo section click Upload button and select your logo image.</li>
+		<li>Once uploaded click Save changes button to save your site logo.</li>
+	</ol>
+</div> <!-- Section -->
+
+<div class="bs-docs-section">
+	<div class="page-header">
+		<h1 id="favicon">Uploading Site Favicon</h1>
+	</div>
+	<p><img src="assets/images/favicon.png" alt="" class="img-thumbnail"></p>
+	<ol>
+		<li>Navigate to Theme Options -&gt; General Settings tab .</li>
+		<li>In the Site Favicon section click Upload button and select your Favicon image.</li>
+		<li>Once uploaded click Save changes button to save your site Favicon.</li>
+	</ol>
+</div> <!-- Section -->
+
+<div class="bs-docs-section">
+	<div class="page-header">
+		<h1 id="styling">Styling</h1>
+	</div>
+	
+	<h3 id="color">Choose site color scheme</h3>
+	<ul>
+		<li>In Admin panel, go to Theme Options -&gt; General Settings tab</li>
+		<li>Here you can choose a primary color and review system color for your site.</li>
+        <li>Click Save changes to save setting.</li>
+	</ul>
+    <h3 id="typography">Site Typography</h3>
+	<ul>
+		<li>Navigate to Theme Options -&gt; Typography settings .</li>
+		<li>Choose font options for your site. The theme supports all Google Fonts. Header font affects menu titles, category titles and module titles. Title font affects post titles. Text font affects text body, excerpt...</li>
+        <li>Click Save changes to save settings.</li>
+	</ul>
+</div>
+
+<div class="bs-docs-section">
+	<div class="page-header">
+		<h1 id="post">Post</h1>
+	</div>
+	<h3 id="featured-images">Featured images for the posts</h3>
+	<p>All of your posts must have a featured images .. these images will appears in the slider , post modules , sidebar .. etc</p>
+	<div class="bs-callout bs-callout-info">The recommended size for the Featured images is <strong>1050px</strong> x <strong>600px</strong>.</div>
+	<div class="bs-callout bs-callout-warning">Theme cropped all uploaded images to fit its places in the theme .. if you have any problems with the size of old images which uploaded before install the theme you need to use <a href="http://wordpress.org/extend/plugins/regenerate-thumbnails/" target="_blank">Regenerate Thumbnails Plugin</a> or <a href="http://wordpress.org/extend/plugins/ajax-thumbnail-rebuild/" target="_blank">AJAX Thumbnail Rebuild Plugin</a> to regenerate thumbnails with suitable sizes .</div>
+    
+    <h3 id="post-format">Post format</h3>
+	<p>The theme support 5 WordPress post formats: Standard, Gallery, Video, Image, Audio.</p>
+    <h4>Add or edit format of a post</h4>
+    <p><img src="assets/images/post-format.png" alt="" class="img-thumbnail"></p>
+    <ul>
+    <li>In post edit page, choose post format in the Format box on the right.</li>
+    <li>Enter information for the corresponding format options in BK Post format options box:</li>
+        <ul>
+            <li>Post format video and audio: enter the url of the video or audio item. The theme support link from Youtube, Vimeo and Souncloud.</li>
+            <li>Post format image: click Select files button to select images or drag images in to image upload area to upload image to the post.</li>
+            <li>Post format gallery: click Select or Upload images button to add a gallerry to the post.</li>
+        </ul>
+    </ul>
+    <h3 id="module">Gallery Format</h3>    
+    <p>Video Tutorial for Gallery Post Format</p>
+    <iframe width="808" height="454" src="http://www.youtube.com/embed/llmf5WDatOc" frameborder="0" allowfullscreen></iframe>
+    
+    <h3 id="module">Wordpress Native Gallery Post</h3>    
+    <p>Video Tutorial for wordpress native Gallery post</p>
+    <iframe width="808" height="454" src="http://www.youtube.com/embed/y7ENyFiIaKc" frameborder="0" allowfullscreen></iframe>
+    
+    <h3 id="review">Adding a Review Post</h3>
+	<p><img src="assets/images/review.png" alt="" class="img-thumbnail"></p>
+	<ol>
+		<li>From the <strong>BK Review System</strong> box in the post edit page .</li>
+		<li>Tick the checkbox <strong>Enable Review On This Post</strong>.</li>
+		<li>Enter the criteria name and use the slider to adjust rating score. The Final average score will be calculated automatically.</li>
+		<li>You can have up to 6 criteria in a review box.</li>
+		<li>Type the Summary textarea your summary for the review item. You can create lists of pros and cons in here.</li>
+        <li>Check to enable user review</li>
+        <li>Setup position for review box in single page</li>
+		<li>Click Publish or Update button to save.</li>
+	</ol>
+    
+    <h3 id="custom-post-setting">Single Post Custom Setting</h3>
+    <p><img src="assets/images/single_custom_setting.png" alt="" class="img-thumbnail"></p>
+    <p>There are 3 layouts for the single post feature image</p>
+    <ol>
+        <li>Standard</li>
+        <li>Paralax</li>
+        <li>Fullwidth</li>
+    </ol>
+    
+</div> <!-- Section -->
+
+<div class="bs-docs-section">
+	<div class="page-header">
+		<h1 id="category">Category</h1>
+	</div>
+	<h3 id="cat-layout">Category layout</h3>
+	<p>You can choose layout for each category. To learn more about what layouts use can choose, see <a href="#blog-layout">Blog and Archive layout</a></p>
+    <p><img src="assets/images/category.png" alt="" class="img-thumbnail"></p>
+    <ol>
+        <li>In Admin panel, go to Posts -&gt; Categories</li>
+        <li>Click a category to edit it</li>
+        <li>In Category edit page, choose a desire layout for current category in Category layout option</li>
+        <li>Sidebar: This option is used to setup choose a sidebar for each category page.</li>
+        <li>Click update to save</li>
+    </ol>
+</div> <!-- Section -->
+
+<div class="bs-docs-section">
+	<div class="page-header">
+		<h1 id="blog-layout">Blog and Archive layout</h1>
+	</div>
+	<p class="lead">The theme has 6 blog layouts that can be set seperately for each page and category.</p>
+	<ol>
+        <li>Classic Blog: Blog layout with small thumbnail. This layout has sidebar.</li>
+        <br/>
+        <p><img src="assets/images/blog_small_layout.png" alt="" class="img-thumbnail"></p>
+        
+        <li>Large Blog: Posts are displayed with large thumbnail. This layout has sidebar.</li>
+        <br/>
+        <p><img src="assets/images/largeblog_layout.png" alt="" class="img-thumbnail"></p>
+        
+        <li>Masonry with sidebar: Posts are displayed in a two columns Masonry layout. This layout has sidebar.</li>
+        <br/>
+        <p><img src="assets/images/Content_masonry_layout.png" alt="" class="img-thumbnail"></p>
+        
+        <li>Masonry without sidebar: Posts are displayed in a two columns Masonry layout. This layout has no sidebar.</li>
+        <br/>
+        <p><img src="assets/images/Fullwidth_masonry_layout.png" alt="" class="img-thumbnail"></p> 
+        
+        <li>Square Grid with sidebar: Posts are displayed in a two columns Masonry layout. This layout has sidebar.</li>
+        <br/>
+        <p><img src="assets/images/content_square_grid_layout.png" alt="" class="img-thumbnail"></p>
+        
+        <li>Square Grid without sidebar: Posts are displayed in a two columns Masonry layout. This layout has no sidebar.</li>
+        <br/>
+        <p><img src="assets/images/fullwidth_square_grid_layout.png" alt="" class="img-thumbnail"></p>           
+    </ol>
+    <h3 id="page-layout">Setting page layout</h3>
+    <p><img src="assets/images/pagelayout.png" alt="" class="img-thumbnail"></p>
+    <ol>
+        <li>In Admin panel, go to Theme Options -&gt; Page Layout tab</li>
+        <li>For each page listed, choose a desire layout and sidebar.</li>
+        <li>Click Save to save option.</li>
+    </ol>
+    <div class="bs-callout bs-callout-info">The layout chosen for Category is applied to all category and will be overidden by layout option set in Category edit page. To edit a specific category layout, see <a href="#cat-layout">Category layout</a></div>
+</div> <!-- Section -->
+
+<div class="bs-docs-section">
+	<div class="page-header">
+		<h1 id="sticky_sidebar">Sticky Sidebar Setup</h1>
+	</div>
+	<p class="lead">The theme supports an option allow you to setup your sidebar sticky or not.</p>
+    <p class="lead">To setup your sticky sidebar, go to Theme Options -&gt; Pages Settings -&gt; Sticky sidebar (For each page)</p>
+ </div> <!-- Section -->
+
+<div class="bs-docs-section">
+	<div class="page-header">
+		<h1 id="footer">Site Footer</h1>
+	</div>
+    <p><img src="assets/images/footer-setting.png" alt="" class="img-thumbnail"></p>
+    
+    <h3 id="footer-instagram">Footer Instagram</h3> 
+    <p>Click Enable Instagram, then put the Instagram Information the required field </p>
+    
+    <h3 id="scroll-top-btn">Scroll top button</h3> 
+    <p>The scroll top button allows you choose between enable or disable the scroll top button</p>
+    
+    <h3 id="copyright-text">Copyright Text</h3> 
+    <p>Fill the Copyright text to the text area</p>
+       
+</div>
+    
+<div class="bs-docs-section">
+	<div class="page-header">
+		<h1 id="site-layout">Site Layout</h1>
+	</div>
+    <p>In Admin panel, go to Theme Options -&gt; Site Layout tab. Here you can set up your site layout.</p>
+    <p><img src="assets/images/site-layout.png" alt="" class="img-thumbnail"></p>
+
+    <h3 id="layout-sw">Boxed And Wide</h3>
+	<p>Site layout section allows you to switch between boxed and wide layout. When boxed layout is chosen, an option for setting site background will appear. Select a color for your site background of click Upload button to use a image instead.</p>
+
+    <h3 id="site-background">Site Background</h3>
+    <p>You can easily choose a background color or upload a background image for your site</p>
+    
+    <h3 id="sb-location">Sidebar Location</h3>
+    <p>Sibar location allows you to switch between left or right position of sidebar</p>
+    
+    <h3 id="sb-responsive">Sidebar responsive option</h3>
+    <p>This option allows you to enable/disable sidebar for small device ( device width &lt 991px)</p>
+
+</div>
+
+<div class="bs-docs-section">
+	<div class="page-header">
+		<h1 id="sidebar">Custom Sidebar Generator</h1>
+	</div>
+    <p class="lead">The theme supports unlimited sidebar, To generate a new sidebar, Please Install the Sidebar Generator Plugin which was recommended when you installed the theme, then please follow these steps</p>
+    <p><img src="assets/images/Create Sidebar.png" alt="" class="img-thumbnail"></p>
+    <ol>
+        <li>Select sidebars option in appearance</li>
+
+        <p><img src="assets/images/CustomSidebarGenerator.png" alt="" class="img-thumbnail"></p>
+
+        <li>Click Add New Sidebar</li>
+        <li>Fill Sidebar name</li>
+        <li>Click OK</li>
+
+    </ol>    
+</div>
+<div class="bs-docs-section">
+	<div class="page-header">
+		<h1 id="shortcode">Shortcode</h1>
+	</div>
+    <p>The theme supports the following shortcodes that can be used in shortcode module (You must install and activate the bk_shortcode plugin comes with the theme before using this function)</p>
+    <p>You can also use these shortcodes in post editor (<strong>without [bkend]</strong> at the end of each shortcode)</p>
+    <ol>
+<!-- Youtube SC -->
+        <li id="youtubesc">
+            <p><strong>Youtube Video Shortcode</strong></p>
+            <pre>[youtube_embed src="PUT YOUR YOUTUBE URL HERE"/]
+[bkend]</pre>
+            <p>Example:</p>
+            <pre>[youtube_embed src="https://www.youtube.com/watch?v=e-ORhEE9VVg"/]
+[bkend]</pre>
+        </li>
+<!-- Vimeo SC -->
+        <li id="vimeosc">
+            <p><strong>Vimeo Video Shortcode</strong></p>
+            <pre>[vimeo_embed src="PUT YOUR VIMEO URL HERE"/]
+[bkend]</pre>
+            <p>Example:</p>
+            <pre>[vimeo_embed src="https://vimeo.com/108210854"/]
+[bkend]</pre>
+        </li>
+<!-- One half SC -->        
+        <li id="half-col-sc">
+            <p><strong>One Half Shortcode</strong></p>
+            <pre>[one_halfs]
+[one_half]PUT YOUR CONTENT FOR THE FIRST COLUMN[/one_half] 
+[one_half]PUT YOUR CONTENT FOR THE LAST COLUMN[/one_half]
+[/one_halfs]
+[bkend]</pre>
+            <p>Example:</p>
+            <pre>[one_halfs]
+[one_half]Ultrices habitant sociosqu leo vestibulum. [/one_half] 
+[one_half]Id id condimentum sed ut mattis aenean dis sollicitudin sed volutpat[/one_half]
+[/one_halfs]
+[bkend]</pre>
+        </li>
+<!-- 1/3 1/3 1/3 SC -->
+        <li id="one-third">
+            <p><strong>1/3 1/3 1/3 Column Shortcode</strong></p>
+            <pre>[one_thirds]
+[one_third]PUT YOUR CONTENT FOR THE FIRST COLUMN[/one_third] 
+[one_third]PUT YOUR CONTENT FOR THE SECOND COLUMN[/one_third] 
+[one_third]PUT YOUR CONTENT FOR THE LAST COLUMN[/one_third] 
+[/one_thirds]
+[bkend]</pre>
+            <p>Example:</p>
+            <pre>[one_thirds]
+[one_third]Ultrices habitant sociosqu leo vestibulum.[/one_third] 
+[one_third]Ultrices habitant sociosqu leo vestibulum. [/one_third] 
+[one_third]Ultrices habitant sociosqu leo vestibulum. [/one_third] 
+[/one_thirds]
+[bkend]</pre>
+        </li>
+<!-- 2/3 1/3 SC -->
+        <li id="two-third-one-third">
+            <p><strong>2/3 1/3 Column Shortcode</strong></p>
+            <pre>[twothird_onethird]
+[two_third]PUT YOUR CONTENT FOR THE TWO THIRD COLUMN[/two_third]
+[one_third]PUT YOUR CONTENT FOR THE ONE THIRD COLUMN[/one_third]
+[/twothird_onethird]
+[bkend]</pre>
+            <p>Example:</p>
+            <pre>[twothird_onethird]
+[two_third]Ultrices habitant sociosqu leo vestibulum. [/two_third]
+[one_third]Ultrices habitant sociosqu leo vestibulum. [/one_third]
+[/twothird_onethird]
+[bkend]</pre>
+        </li>
+        
+<!-- Info Box SC -->
+        <li id="info-box">
+            <p><strong>Info Box Shortcode</strong></p>
+            <pre>[bkinfobox backgroundcolor="PUT YOUR COLOR CODE" title="PUT YOUR TITLE"]PUT YOUR CONTENT[/bkinfobox]
+[bkend]</pre>
+            <p>Example:</p>
+            <pre>[bkinfobox title="Info box" backgroundcolor="#F8F8F8" ]Ultrices habitant sociosqu leo vestibulum. Euismod, fermentum per aptent Nibh dictumst lorem quis viverra[/bkinfobox]
+[bkend]</pre>
+        </li>
+        
+<!-- Accordion SC -->
+        <li id="accordion">
+            <p><strong>Accordion Shortcode</strong></p>
+            <pre>[accordions]
+[accordion title="PUT YOUR TITLE"]PUT YOUR CONTENT[/accordion]
+...
+[/accordions]</pre>
+        <p>Note: You can put multi accordion shortcodes. See the example below for 3 consecutive accordion shortcodes</p>
+        <pre>[accordions]
+[accordion title="Accordion Title 0"]Accordion Content 0[/accordion]
+[accordion title="Accordion Title 1"]Accordion Content 1[/accordion]
+[accordion title="Accordion Title 2"]Accordion Content 2[/accordion]
+[/accordions]</pre>
+        </li>
+        
+<!-- Tabs SC -->
+        <li id="tabs">
+            <p><strong>Tabs Shortcode</strong></p>
+            <pre>[tabs]
+[tab title="PUT YOUR TAB TITLE"]PUT YOUR TAB CONTENT[/tab]
+...
+[/tabs]
+[/bksctabs]
+[bkend]</pre>
+        <p>Example:</p>
+        <pre>[tabs]
+[tab title="Tab Title 0"]Tab Content 0[/tab]
+[tab title="Tab Title 1"]Tab Content 1[/tab]
+[tab title="Tab Title 2"]Tab Content 2[/tab]
+[/tabs]
+[bkend]</pre>
+        </li>
+
+<!-- Parallax Image SC -->
+        <li id="parallax-image">
+            <p><strong>Parallax Image Shortcode</strong></p>
+            <pre>[bkparallax image_url = "PUT YOUR IMAGE URL" url = "PUT YOUR URL" title = "PUT YOUR TITLE" text_desc= "PUT YOUR DESCRIPTION"][/bkparallax]
+[bkend]</pre>
+        <p>Example:</p>
+        <pre>[bkparallax image_url = "http://localhost/wordpress/wp-content/uploads/2015/01/2390379489_4ab06f3536_b-.jpg" url = "sense.bk-ninja.com" title = "Parallax Image" text_desc= "Mauris viverra nunc congue augue euismod suscipit. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos"][/bkparallax]
+[bkend]</pre>
+        </li>
+
+<!-- Team SC -->
+        <li id="team">
+            <p><strong>Team Shortcode</strong></p>
+            <pre>[bkteam number="PUT YOUR NUMBER OF AUTHOR TO BE SHOWED" item_in_row = "PUT THE NUMBER OF ITEMS IN A ROW (Recommend: put 3 for the content has sidebar section and 4 for the full width section)"][/bkteam]
+[bkend]</pre>
+        <p>Example:</p>
+        <pre>[bkteam number="6" item_in_row = "4"][/bkteam]
+[bkend]</pre>
+        </li>
+        
+<!-- Author Box SC -->
+        <li id="author-box">
+            <p><strong>Author Box Shortcode</strong></p>
+            <pre>[authorbox authorid = "PUT THE AUTHOR ID"][/authorbox]
+[bkend]</pre>
+        <p>Example:</p>
+        <pre>[authorbox authorid = "1"][/authorbox]</pre>
+        </li>
+<!-- Button SC -->
+        <li id="buttons">
+            <p><strong>Button Shortcode</strong></p>
+            <pre>[buttons]
+[button href="PUT THE LINK HERE" name="PUT THE BUTTON NAME" backgroundcolor="PUT THE BACKGROUND COLOR CODE" textcolor="PUT THE TEXT COLOR CODE"]
+...
+[/buttons]
+[bkend]
+</pre>
+        <p>Example:</p>
+        <pre>[buttons]
+[button href="#" name="Button 1" backgroundcolor="#FE6969" textcolor="#fff"]
+[button href="#" name="Button 2" backgroundcolor="#FACE00" textcolor="#fff"]
+[/buttons]</pre>
+        </li>
+<!-- Google Adsense SC -->
+        <li id="bkga">
+            <p><strong>Google Adsense Shortcode</strong></p>
+            <p>Example 1: Float Left</p>
+            <pre>[bkga float="left"]Google Adsense Code[/bkga]</pre>
+            <p>Example 2: Float Right</p>
+            <pre>[bkga float="right"]Google Adsense Code[/bkga]</pre>
+        </li>
+    </ol>    
+</div>
+<div class="bs-docs-section">
+	<div class="page-header">
+		<h1 id="updating">Updating Wordpress Theme</h1>
+	</div>
+	<p class="lead">This theme may be updated periodically in order to add new features and fix bugs. When a new update be available an update message will appears on your WordPress dashboard . As a customer, you can download the most current version from your ThemeForest account. </p>
+	<h3 id="auto-update">Updating Automatically</h3>
+	<p>
+		Envato have developed the <a href="https://github.com/envato/envato-wordpress-toolkit" target="_blank">Envato Toolkit Plugin</a> for WordPress.
+		You can use this to receive notification of updates to themes purchased from ThemeForest
+		and to automatically update (upon clicking) directly from within your WordPress admin area.
+	</p>
+	<ul>
+		<li class="p-bottom">Download the <a href="https://github.com/envato/envato-wordpress-toolkit/zipball/master">plugin zip file</a> to your computer.</li>
+		<li class="p-bottom">In your WordPress admin area, go to Plugins -&gt; Add New then click Upload.</li>
+		<li class="p-bottom">Click Choose File, select the plugin zip file you downloaded and click Install Now.</li>
+		<li class="p-bottom">After installation, click Activate.</li>
+		<li class="p-bottom">Click the new Envato Toolkit link in the menu and follow the instructions to configure the plugin.</li>
+	</ul>
+				
+	<h3 id="manual-update">Updating Manually</h3>
+	<ul class="p">
+		<li class="p-bottom">Download the most current version from <a href="http://themeforest.net/downloads?ref=mo3aser" target="_blank">ThemeForest</a> in the "Downloads" area of your account.</li>
+		<li class="p-bottom">Unzip the package and locate the-rex.zip in the theme folder.</li>
+		<li class="p-bottom">Go to Appearance -&gt; Themes and activate another theme such as the default WordPress theme.</li>
+		<li class="p-bottom">Delete the the-rex theme which is now inactive.</li>
+		<li class="p-bottom">Go to Install Themes -&gt; Upload then install and activate the-rex.zip from the new package.</li>
+	</ul>
+</div> <!-- Section -->
+
+<div class="bs-docs-section">
+	<div class="page-header">
+		<h1 id="translations">Language Translations</h1>
+	</div>
+	<p class="lead">The REX is able to be translated into any language. The process of translating the theme is a user responsibility. The following instructions are given as guidance.
+		<ol>
+		<li>Open wp-config.php and replace this:
+			<code>define ('WPLANG', '');  </code> with this (subsitute the language string (bg_BG) with your own!): <code>define ('WPLANG', 'bg_BG');</code> </li>
+		<li> Download and install <a rel="nofollow" target="_blank" href="http://www.poedit.net/download.php">POEDIT</a></li>
+		<li>Connect to your site -&gt; open your theme/languages directory</li>
+		<li>Look for the default.po file in theme package and open it with POEDIT.</li>
+		<li>Translate file and save it as bg_BG (the file name must match with the string you inserted into wp-config.php)</li>
+		<li>Two files will be generated after save. bg_BG.po and bg_BG.mo</li>
+		<li>Upload the .mo and .po files into wp-content/themes/your-theme/languages folder</li>
+	</ol>
+	<div class="bs-callout bs-callout-warning">Your WordPress installation should be in the language you intend on using the site.</div>
+</p>
+</div> <!-- Section -->
+
+<div class="bs-docs-section">
+	<div class="page-header">
+		<h1 id="contact">Contact</h1>
+	</div>
+	<p>If you have any problem with the theme, you can post your question on ThemeForest comment section or email us at bkninja.team@gmail.com. We will try to answer as fast as possible. Our timezone is GMT +7.</p>
+</div> <!-- Section -->
+
+<div class="bs-docs-section">
+	<div class="page-header">
+		<h1 id="rate-for-us">Help us by rating this theme</h1>
+	</div>
+	<p>If you like this theme please help us rate it 5 stars on ThemeForest by following the instruction below. We appreciate your kindness so much!</p>
+    <p><img src="assets/images/how-to-rate.jpg" class="img-thumbnail"/></p>
+</div> <!-- Section -->
+
+</div>
+</div>
+</div>
+
+
+    <!-- Footer
+    ================================================== -->
+    <footer class="bs-footer" role="contentinfo">
+      <div class="container"> </div>
+    </footer>
+
+
+<script src="assets/jquery.js"></script>
+<script src="assets/bootstrap.js"></script>
+<script src="assets/holder.js"></script>
+<script src="assets/application.js"></script>
+  
+
+</body></html>
